@@ -1,0 +1,47 @@
+# IMPLEMENTATION OF AND,OR,NOT,NAND,NOR,XOR LOGIC GATES
+def AND(p, q):
+	return p & q
+
+def OR(p, q):
+	return p | q
+
+def NOT(z):
+	return ~z+2
+
+def NAND(p,q):
+	return NOT(AND(p,q))
+
+def NOR(p,q):
+	return NOT(OR(p,q))
+
+def XOR(p,q):
+	return p^q
+
+# OUTPUT OF AND GATE
+print(" 0 AND 0 =", AND(0, 0))
+print(" 0 AND 1 =", AND(0, 1))
+print(" 1 AND 0 =", AND(1, 0))
+print(" 1 AND 1 =", AND(1, 1))
+# OUTPUT OF OR GATE
+print(" 0 OR 0 =", OR(0, 0))
+print(" 0 OR 1 =", OR(0, 1))
+print(" 1 OR 0 =", OR(1, 0))
+print(" 1 OR 1 =", OR(1, 1))
+# OUTPUT OF NOT GATE
+print("NOT 0 =", NOT(0))
+print("NOT 1 =", NOT(1))
+# OUTPUT OF NAND
+print(" 0 NAND 0 =", NAND(0, 0))
+print(" 0 NAND 1 =", NAND(0, 1))
+print(" 1 NAND 0 =", NAND(1, 0))
+print(" 1 NAND 1 =", NAND(1, 1))
+# OUTPUT OF NOR GATE
+print(" 0 NOR 0 =", NOR(0, 0))
+print(" 0 NOR 1 =", NOR(0, 1))
+print(" 1 NOR 0 =", NOR(1, 0))
+print(" 1 NOR 1 =", NOR(1, 1))
+# OUTPUT OF XOR GATE
+print(" 0 XOR 0 =", XOR(0, 0))
+print(" 0 XOR 1 =", XOR(0, 1))
+print(" 1 XOR 0 =", XOR(1, 0))
+print(" 1 XOR 1 =", XOR(1, 1))
